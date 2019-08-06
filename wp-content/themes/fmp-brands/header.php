@@ -51,8 +51,8 @@ $custom_logo_url = wp_get_attachment_image_url( $custom_logo_id , 'full' );
 				<div class="cell small-12">
 
 					<div class="Xnav-bar grid-x grid-margin-x grid-padding-x align-justify">
-						<div class="cell small-6"><a href="<?php echo home_url(); ?>"><?php echo '<img src="' . esc_url( $custom_logo_url ) . '" alt="">'; ?></a></div>
-						<div class="cell small-6 text-right align-self-middle"><span class="cta-button"><a href="#form">CALL TO ACTION</a></span></div>
+						<div class="cell small-5"><a href="<?php echo home_url(); ?>"><?php echo '<img src="' . esc_url( $custom_logo_url ) . '" alt="">'; ?></a></div>
+						<div class="cell small-7 text-right align-self-middle"><span class="cta-button"><a href="#cta-form">GET STARTED NOW</a></span></div>
 					</div>
 
 				</div>

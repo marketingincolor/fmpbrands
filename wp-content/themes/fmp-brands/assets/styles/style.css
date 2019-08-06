@@ -333,9 +333,7 @@ SIDEBARS & ASIDES
 /*********************
 FOOTER STYLES
 *********************/
-.footer {
-  clear: both;
-  margin-top: 1em; }
+.footer { clear: both; }
 
 /*********************
 VISUAL EDITOR STYLES
@@ -355,24 +353,36 @@ PLUGIN STYLES
 /*********************
 FMP BRANDS THEME CUSTOMIZATIONS
 *********************/
-
-/*font-family: 'Nunito Sans', sans-serif;
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700,700i,800,800i&display=swap');
-font-family: 'Montserrat', sans-serif;*/
-
 body { font-family: 'Montserrat', sans-serif; color:#606060;}
 body {overflow-x: hidden;}
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 { font-family: 'Nunito Sans', sans-serif; }
-
+p { font-weight:500; }
 
 /*********************
 HEADER
 *********************/
-.top-bar, .top-bar ul { background-color: #213E61; }
+.top-bar, .top-bar ul { background-color: #213E61; padding:1em 0;}
+
+/*********************
+FOOTER
+*********************/
+.footer { background:#363636; color:#fff; font-size:16px; font-family:'Nunito Sans', sans-serif; padding:2em 0em; }
+
+/*********************
+HOME PAGE
+*********************/
 .nav-bar { width:100%; padding:3rem 0; }
 .nav-bar { position:absolute; z-index:10; }
 .nav-bar {background-color: rgb(29, 47, 88); opacity: 0.902}
+.cta-button a { background-color:#CB6A4A; border: 3px solid #F09273; border-radius:7px; padding:.5rem 2rem; color:#fff; text-transform:uppercase; font-weight:600; }
+.cta-button a:hover { background-color:transparent; }
+
+.hero {
+  background-image: url('../images/fmp-brandlp-hero-bgnd.jpg');
+  background-repeat:no-repeat;
+  background-position: center center; 
+  background-size: cover;
+}
 
 .hero { position:relative; }
 .hero .hero-overlay { 
@@ -386,16 +396,94 @@ HEADER
 .hero .hero-overlay .hero-inner h1{ color:#fff; font-size:50px; font-weight:700; font-style:italic; margin-bottom:2rem; }
 .hero .hero-overlay .hero-inner p{ color:#1D2F58; font-size:21px; font-weight:700; margin-bottom:4rem; }
 
-/*********************
-FOOTER
-*********************/
-.footer { background:#363636; color:#fff; font-size:16px; font-family:'Nunito Sans', sans-serif; padding:2em 0em; }
+.bounce {
+  display: inline-block;
+  position: relative;
+  -moz-animation: bounce 0.5s infinite linear;
+  -o-animation: bounce 0.5s infinite linear;
+  -webkit-animation: bounce 0.5s infinite linear;
+  animation: bounce 0.5s infinite linear;
+  colr:000;
+  padding-bottom:1em;
+}
+@-webkit-keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}
+@-moz-keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}
+@-o-keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}
+@-ms-keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}
+@keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}
 
+.brands h2 { margin:1em; color:#1D2F58; font-weight:800; text-transform:uppercase; font-style:italic; font-size: 40px; }
+.brands .button-cta { background-color:#CB6A4A; border: 3px solid #F09273; border-radius:7px; padding:.5rem 2rem; color:#fff; text-transform:uppercase; font-weight:600; }
+.brands .brand-inner { margin:1em 0em; }
+.subbrand p { margin:2rem 0rem 1rem; }
+
+.accordion { background:transparent; }
+.accordion-content { border:none; background-color:transparent; color:inherit; }
+.accordion-title { background-color:#01AFA1; color:#fff; border:none; font-size:1.25rem; text-transform:uppercase; font-weight:600; }
+.accordion-title:hover, .accordion-title:focus { background-color:#CB6A4A; color:#fff; }
+.is-active .accordion-title { background-color:#CB6A4A; }
+.accordion-title a:hover, .accordion-title a:focus { color:#fff; }
+.accordion-item:last-child>:last-child { border-bottom:none; }
+
+.about { position:relative; \ }
+.about {
+  background-repeat:no-repeat;
+  background-position: top center; 
+  background-size: cover;
+}
+.about .about-overlay { 
+  background-image: url('../images/fmp-white-rectangle.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height:400px;
+}
+.about .logo { padding:2em 0em; }
+.about-mobile { min-height:400px; text-align:center; color:#fff; }
+.about-mobile .logo { padding:4em; }
+.about-mobile p { margin:0em 4em 6em; }
+
+.form {
+  background-image: url('../images/fmp-brndlp-form-bgnd.jpg');
+  background-repeat:no-repeat;
+  background-position: center center; 
+  background-size: cover;
+}
+.form { color:#fff; }
+.form .inner-content { padding:4em 0em; }
+.form .inner-content h2 { font-size:2rem; font-style:italic; font-weight:600; }
 
 /*********************
 NINJA FORM CUSTOMIZATIONS
 *********************/
-
+.nf-form-wrap label { color:#fff; }
+.nf-form-wrap input[type=button]{ cursor:pointer; background-color:#CB6A4A; border: 3px solid #F09273; border-radius:7px; padding:.5rem 2rem; color:#fff; text-transform:uppercase; font-weight:600; }
+.nf-form-wrap input[type=button]:hover{ background-color:transparent; }
 
 /*********************
 MEDIA QUERIES
@@ -403,19 +491,35 @@ MEDIA QUERIES
 
 /* Define mobile styles */
 @media only screen {
-
+.hero { background-image: url('../images/fmp-brandlp-hero-mob-bgnd.jpg'); background-position:top center; }
+.hero .hero-overlay { background-image: none; }
+.hero-mobile .hero-inner { margin-top:20rem !important; background-color:rgba(1, 175, 161, .7); }
+.hero-mobile .hero-inner h1 { color:#fff !important; text-align:center; font-weight:600 !important; font-size: 48px !important; }
+.hero-mobile .hero-inner p { color:#fff !important; line-height:1.2; text-align:center; font-weight:600 !important; font-size:24px !important; }
+.cta-button a { font-size:12px; padding:.5rem; }
+.about { background-image: url('../images/fmp-brndlp-about-mob-bgnd.jpg'); }
+.about { border-top:none; border-bottom:none;}
+.form { background-image: url('../images/fmp-brndlp-form-mob-bgnd.jpg'); }
+.form .inner-content h2, .form .inner-content p { text-align:center; }
 
 } 
 
 /* min-width 641px, medium screens */
 @media only screen and (min-width: 40.063em) {
-
+.hero { background-image: url('../images/fmp-brandlp-hero-bgnd.jpg'); background-position:center center; }
+.hero-mobile .hero-inner { margin-top:12rem; }
+.form { background-image: url('../images/fmp-brndlp-form-bgnd.jpg'); }
+.form .inner-content h2, .form .inner-content p { text-align:initial; }
 
 }
 
 /* min-width 1025px, large screens */
 @media only screen and (min-width: 64.063em) {
-
+.hero .hero-overlay { background-image: url('../images/fmp-hero-rectangle.png'); }
+.hero-mobile .hero-inner { background-color:transparent; }
+.cta-button a { font-size:inherit; padding: .5rem 2rem; }
+.about { background-image: url('../images/fmp-brndlp-about-bgnd.jpg'); }
+.about { border-top:5px solid #213E61; border-bottom:10px solid #01AFA1;}
 
 } 
 
