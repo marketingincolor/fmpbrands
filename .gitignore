@@ -10,6 +10,8 @@ wp-content/uploads/
 wp-content/mu-plugins/
 wp-content/wp-cache-config.php
 wp-content/plugins/hello.php
+wp-content/plugins/all-in-one-wp-migration/
+wp-content/ai1wm-backups/
 
 /.htaccess
 /license.txt
