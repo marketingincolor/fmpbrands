@@ -371,7 +371,7 @@ FOOTER
 /*********************
 HOME PAGE
 *********************/
-.nav-bar { width:100%; padding:3rem 0; }
+.nav-bar { width:100%; padding:1.5rem 0; }
 .nav-bar { position:absolute; z-index:10; }
 .nav-bar {background-color: rgb(29, 47, 88); opacity: 0.902}
 .cta-button a { background-color:#CB6A4A; border: 3px solid #F09273; border-radius:7px; padding:.5rem 2rem; color:#fff; text-transform:uppercase; font-weight:600; }
@@ -437,9 +437,10 @@ HOME PAGE
     100% { top: 0; }
 }
 
-.brands h2 { margin:1em; color:#1D2F58; font-weight:800; text-transform:uppercase; font-style:italic; font-size: 40px; }
+.brands h2 { margin:1em; color:#1D2F58; font-weight:800; text-transform:uppercase; font-style:italic; font-size: 50px; }
 .brands .button-cta { background-color:#CB6A4A; border: 3px solid #F09273; border-radius:7px; padding:.5rem 2rem; color:#fff; text-transform:uppercase; font-weight:600; }
 .brands .brand-inner { margin:1em 0em; }
+.brands .inner-content { margin-bottom:3em; }
 .subbrand p { margin:2rem 0rem 1rem; }
 
 .accordion { background:transparent; }
@@ -450,7 +451,7 @@ HOME PAGE
 .accordion-title a:hover, .accordion-title a:focus { color:#fff; }
 .accordion-item:last-child>:last-child { border-bottom:none; }
 
-.about { position:relative; \ }
+.about { position:relative; }
 .about {
   background-repeat:no-repeat;
   background-position: top center; 
@@ -461,8 +462,8 @@ HOME PAGE
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  min-height:400px;
 }
+.about .about-inner { height:100%; }
 .about .logo { padding:2em 0em; }
 .about-mobile { min-height:400px; text-align:center; color:#fff; }
 .about-mobile .logo { padding:4em; }
@@ -476,14 +477,17 @@ HOME PAGE
 }
 .form { color:#fff; }
 .form .inner-content { padding:4em 0em; }
-.form .inner-content h2 { font-size:2rem; font-style:italic; font-weight:600; }
+.form .inner-content h2 { font-size:50px; font-style:italic; font-weight:600; }
 
 /*********************
 NINJA FORM CUSTOMIZATIONS
 *********************/
 .nf-form-wrap label { color:#fff; }
+.nf-field-element input { border-radius:7px; }
 .nf-form-wrap input[type=button]{ cursor:pointer; background-color:#CB6A4A; border: 3px solid #F09273; border-radius:7px; padding:.5rem 2rem; color:#fff; text-transform:uppercase; font-weight:600; }
 .nf-form-wrap input[type=button]:hover{ background-color:transparent; }
+.nf-field-container { margin-bottom:1px !important; }
+.nf-field-element textarea { height:100px !important; margin-bottom:20px !important; }
 
 /*********************
 MEDIA QUERIES
@@ -506,6 +510,8 @@ MEDIA QUERIES
 
 /* min-width 641px, medium screens */
 @media only screen and (min-width: 40.063em) {
+.about .about-overlay { min-height:700px; }
+.brands { min-height:700px; }
 .hero { background-image: url('../images/fmp-brandlp-hero-bgnd.jpg'); background-position:center center; }
 .hero-mobile .hero-inner { margin-top:12rem; }
 .form { background-image: url('../images/fmp-brndlp-form-bgnd.jpg'); }

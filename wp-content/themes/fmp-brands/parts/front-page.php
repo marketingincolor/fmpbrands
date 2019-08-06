@@ -135,7 +135,7 @@
 			<div class="inner-content grid-x grid-margin-x grid-padding-x">
 				<div class="about-overlay Xsmall-12 show-for-large Xmedium-10 large-8 cell" >
 					<div class="grid-x grid-margin-x about-inner">
-						<div class="small-12 medium-6 medium-offset-1 large-6 large-offset-1 cell">
+						<div class="small-12 medium-6 medium-offset-1 large-6 large-offset-1 cell align-self-middle">
 						<img class="logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/fmp-brndlp-about-logo.png">	
 						<?php if( get_field('about_copy') ): ?>
 							<p><?php the_field('about_copy'); ?></p>
