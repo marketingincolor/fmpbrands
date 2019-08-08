@@ -469,6 +469,7 @@ HOME PAGE
 .about-mobile { min-height:400px; text-align:center; color:#fff; }
 .about-mobile .logo { padding:4em; }
 .about-mobile p { margin:0em 4em 6em; }
+.about-mobile ul { margin-left:3em; text-align:left; }
 
 .form {
   background-image: url('../images/fmp-brndlp-form-bgnd.jpg');
@@ -502,6 +503,7 @@ MEDIA QUERIES
 .hero-mobile .hero-inner { margin-top:20rem !important; background-color:rgba(1, 175, 161, .7); }
 .hero-mobile .hero-inner h1 { color:#fff !important; text-align:center; font-weight:600 !important; font-size: 48px !important; }
 .hero-mobile .hero-inner p { color:#fff !important; line-height:1.2; text-align:center; font-weight:600 !important; font-size:24px !important; }
+.brands h2 { font-size:36px; }
 .cta-button a { font-size:12px; padding:.5rem; }
 .about { background-image: url('../images/fmp-brndlp-about-mob-bgnd.jpg'); }
 .about { border-top:none; border-bottom:none;}
@@ -516,6 +518,7 @@ MEDIA QUERIES
 .brands { min-height:700px; }
 .hero { background-image: url('../images/fmp-brandlp-hero-bgnd.jpg'); background-position:center center; }
 .hero-mobile .hero-inner { margin-top:12rem; }
+.brands h2 { font-size:50px; }
 .form { background-image: url('../images/fmp-brndlp-form-bgnd.jpg'); }
 .form .inner-content h2, .form .inner-content p { text-align:initial; }
 
