@@ -465,6 +465,7 @@ HOME PAGE
 }
 .about .about-inner { height:100%; }
 .about .logo { padding:2em 0em; }
+.about h2 { font-weight:800; font-style:italic; font-size: 50px; line-height:1; }
 .about-mobile { min-height:400px; text-align:center; color:#fff; }
 .about-mobile .logo { padding:4em; }
 .about-mobile p { margin:0em 4em 6em; }
