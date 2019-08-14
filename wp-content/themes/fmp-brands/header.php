@@ -60,6 +60,11 @@ $custom_logo_url = wp_get_attachment_image_url( $custom_logo_id , 'full' );
 		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 		})(window,document,'script','dataLayer','GTM-PCPCWN5');</script>
 		<!-- End Google Tag Manager -->
+		
+		<!-- Event snippet for Sign Up Form Conversion conversion page -->
+		<script>
+		  gtag('event', 'conversion', {'send_to': 'AW-718117551/4MdVCNqt16cBEK-1ttYC'});
+		</script>
 	</head>
 			
 	<body <?php body_class(); ?>>

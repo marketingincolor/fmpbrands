@@ -43,26 +43,7 @@ $custom_logo_url = wp_get_attachment_image_url( $custom_logo_id , 'full' );
 		</div> <!-- end .off-canvas-wrapper -->
 		
 		<?php wp_footer(); ?>
-		<!-- Event snippet for Sign Up Form Conversion conversion page -->
-		<script>
-		  gtag('event', 'conversion', {'send_to': 'AW-718117551/4MdVCNqt16cBEK-1ttYC'});
-		</script>
-		<!-- Event snippet for Sign Up Form Conversion conversion page
-		In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-		<script>
-		function gtag_report_conversion(url) {
-		  var callback = function () {
-		    if (typeof(url) != 'undefined') {
-		      window.location = url;
-		    }
-		  };
-		  gtag('event', 'conversion', {
-		      'send_to': 'AW-718117551/4MdVCNqt16cBEK-1ttYC',
-		      'event_callback': callback
-		  });
-		  return false;
-		}
-		</script>
+
 	</body>
 	
 </html> <!-- end page -->
