@@ -29,8 +29,9 @@ $custom_logo_url = wp_get_attachment_image_url( $custom_logo_id , 'full' );
 
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 
-		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700,700i,800,800i&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/motion-ui@1.2.3/dist/motion-ui.min.css" />
 		<?php wp_head(); ?>
 
 		<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -82,7 +83,7 @@ $custom_logo_url = wp_get_attachment_image_url( $custom_logo_id , 'full' );
 				<div class="grid-container full">	
 					
 
-				<div class="nav-bar grid-x Xgrid-margin-x grid-padding-x">
+				<div class="nav-bar grid-x Xgrid-margin-x grid-padding-x" style="display:none;">
 				<div class="cell small-12">
 
 					<div class="Xnav-bar grid-x grid-margin-x grid-padding-x align-justify">
